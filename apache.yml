@@ -15,7 +15,8 @@
       copy:
         src: index.html
         dest: /var/www/html/
-      handlers:
     - name: restart Apache server
-      service: name=httpd state=restarted
+      service: 
+         name: httpd 
+         state: restarted
 ...
